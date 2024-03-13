@@ -1,0 +1,90 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+
+/* Типи селекторів */
+
+/* Тип №0. Селектор зірочка * */
+
+/* * {
+	color: black;
+} */
+
+/* Тип №1. Селектор тегу */
+
+h1 {
+	color: red;
+}
+
+a {
+	color: blue;
+}
+
+/* Тип №2. Селектор класу */
+
+.location-name {
+	color: green;
+}
+
+/* Тип №3. Селектор ID */
+
+#description {
+	color: brown;
+}
+
+/* Тип №4. Селектор атрибутів */
+/* Шукає сполечення літер ame в трибутах class */
+[class*="ame"] {
+	color: blueviolet;
+}
+
+/* КОМБІНАЦІЇ СЕЛЕКТОРІВ */
+
+/* Усі DIV але лише з класом sport
+	НІЯКИХ ПРОБІЛІВ МІЖ СЕЛЕКТОРАМИ!
+*/
+
+div.sport {
+	color: greenyellow;
+}
+
+/* Звертаємось відразу 
+	до кількох класів 
+*/
+
+.education-title,
+.education-text {
+	color: green;
+}
+
+/* Усі теги A але тільки в середені об'єктів з класом education-text
+	рівень вкладеності значення немає
+ */
+.education-text a {
+	color: chocolate;
+}
+
+/* Усі об'єкти з класом property-text в середені 
+	об'єктів з класом property-title.
+	Рівень вкладеності значення немає
+*/
+.property-title .property-text {
+	color: chocolate;
+}
+
+/* Усі об'єкти в середені 
+об'єктів з класом culture */
+.culture * {
+	color: coral;
+}
+
+/* Усі теги P першого рівня (безпосередні) 
+	в середені об'єктів з класом culture-type
+*/
+.culture-type > p {
+	color: turquoise;
+}
+
+
+
+
