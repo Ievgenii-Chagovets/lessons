@@ -1,79 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 	<head>
-		<!-- Кодування тексту -->
 		<meta charset="UTF-8">
-		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Підключення окремого файлу стилів -->
 		<link rel="stylesheet" href="css/style.css">
-		<!-- Заголовок сторінки в браузері -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 		<title>Lesson 5</title>
 	</head>
 	<body>
-		<header class="header"></header>
-		<main class="page">
-			<!-- 
-			<div class="block">
-				<p>
-					DIV Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos asperiores unde, sequi pariatur inventore ullam voluptas nisi earum alias sint sed laudantium nihil expedita, eius praesentium, quo veritatis distinctio.
-				</p>
-				<p>
-					DIV Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos asperiores unde, sequi pariatur inventore ullam voluptas nisi earum alias sint sed laudantium nihil expedita, eius praesentium, quo veritatis distinctio.
-				</p>
-				<p>
-					DIV Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos asperiores unde, sequi pariatur inventore ullam voluptas nisi earum alias sint sed laudantium nihil expedita, eius praesentium, quo veritatis distinctio.
-				</p>
-				<p>
-					DIV Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos asperiores unde, sequi pariatur inventore ullam voluptas nisi earum alias sint sed laudantium nihil expedita, eius praesentium, quo veritatis distinctio.
-				</p>
-			</div>
-			<div class="block-1">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, rem temporibus fugiat debitis, nobis delectus, soluta libero inventore illo illum minus rerum necessitatibus eius at! Ratione odio eius autem delectus.
-			</div>
-			<span class="inline">
-				SPAN Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam architecto quaerat velit illum? Recusandae magnam, id rem necessitatibus nostrum non similique ad earum quisquam, numquam quia accusantium unde, quaerat repudiandae!
-			</span>
-			<img src="img/honey.jpg" class="inline-block" alt="Image">
- 			-->
-			<!-- 
-			<div class="article">
-				<h1 class="title">Title</h1>
-				<a href="#" class="link">link</a>
-				<div class="text">
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe, ab possimus doloribus voluptates, eveniet placeat delectus culpa error voluptatum, velit adipisci quo voluptatibus officiis? Ratione eos tenetur error id?
+			<header class="header">
+
+			</header>
+			<main class="page">
+
+				<!-- -------------Krovato introduction section------------ -->
+
+				<div class="introduction__container">
+					<h2 class="introduction-title">
+						KROVATO це
+					</h2>
+					<ul class="introduction-list">
+						<li class="introduction-item">
+							<img src="img/check-mark.jpg" alt="#" width="100" height="100">
+							<h3 class="introduction-item__title">Власне виробництво</h3>
+							<p class="introduction-item__text">
+								Також у нас є своє виробництво, завдяки чому ми можемо виготовити меблі безпосередньо за Вашими побажаннями:
+								нестандартний розмір, висота, виготовлення меблів за Вашим ескізом. Ліжка, тумби, комоди, шафи - все це ми можемо
+								доопрацювати за Вашим бажанням.
+							</p>
+						</li>
+						<li class="introduction-item">
+							<img src="img/check-mark.jpg" alt="#" width="100" height="100">
+							<h3 class="introduction-item__title">Професіонали</h3>
+							<p class="introduction-item__text">
+								Наші вироби виготовлені на професійному обладнанні з ясена, вільхи, бука, дуба, металу та ДСП. Фабрики із закритим
+								циклом виробництва – контроль якості кожному етапі: від завезення дерева в цех до складання ліжка в клієнта.
+							</p>
+						</li>
+						<li class="introduction-item">
+							<img src="img/check-mark.jpg" alt="#" width="100" height="100">
+							<h3 class="introduction-item__title">Великий вибір</h3>
+							<p class="introduction-item__text">
+								На нашому сайті Ви легко зможете підібрати собі спальню, вітальню або дитячу кімнату "під ключ". Величезний вибір
+								матраців, ліжок, а також тумбочок та комодів чекають на Вас.
+							</p>
+						</li>
+						<li class="introduction-item">
+							<img src="img/check-mark.jpg" alt="#" width="100" height="100">
+							<h3 class="introduction-item__title">Контроль якості</h3>
+							<p class="introduction-item__text">
+								Наші досвідчені менеджери, з радістю допоможуть підібрати Вам меблі, які Вас радуватимуть довгі роки.
+								Завдяки власній службі доставки та збирання, ми підтримуємо контроль якості від виробництва до клієнта.
+							</p>
+						</li>
+					</ul>
+				</div>
+
+				<!------------ Lounge organisation section--------- -->
+
+				<div class="lounge__container">
+					<h2 class="lounge-title">
+						Оформлення вітальні. Які м'які меблі краще вибрати?
+					</h2>
+					<div class="lounge-picture">
+						<img src="img/lounge.jpg" alt="#" width="100%">
+					</div>
+					<p class="lounge-text">
+						Вітальня – це основна кімната у кожному будинку. Саме вона служить для прийому гостей, проведення часу всією
+						сім'єю та
+						просто для відпочинку у приємній теплій атмосфері. Оформляючи свій будинок та вітальню зокрема, всі намагаються
+						зробити
+						її максимально зручною, комфортною та красивою. Основним та центральним елементом оформлення вітальні, як і
+						будь-якої
+						іншої кімнати, є м'які меблі.
+					</p>
+					<p class="lounge-text">
+						Будь-які меблі для вітальні повинні бути не тільки стильними і красивими, але і функціональними. На таких меблів
+						має
+						бути зручно та приємно відпочивати та приймати гостей. Однак сьогодні існує величезна різноманітність
+						найрізноманітніших
+						м'яких меблів для вітальні, яка підходить для кімнат різних розмірів і форм. На чому варто зупинити свій вибір?
+						Як краще
+						оформити свою вітальню, щоб вам було комфортно, а гості хотіли приходити до вас знову та знову?
+					</p>
+					<p class="lounge-text__introduction">
+						На сайті інтернет магазину Кровато представлено велику різноманітність м'яких меблів для вітальні, серед яких
+						кожен
+						зможе вибрати для себе найбільш вдалий варіант. У нас ви знайдете:
+					</p>
+					<ul class="lounge-furniture__list">
+						<li class="lounge-furniture__item">
+							<p class="lounge-furniture__text">
+								Прямі дивани. Такі дивани вважаються класикою. Вони підходять для віталень будь-яких форм та розмірів.
+								Прямий диван
+								виглядає стильно та лаконічно, на ньому зручно відпочивати, приймати гостей або навіть спати. Прямі
+								дивани можуть стояти
+								біля стіни, так і в центрі кімнати. Багато моделей прямих диванів легко розкладаються, перетворюючись на
+								повноцінне
+								спальне місце. Також більшість диванів мають великі та місткі ніші, які є додатковим місцем для
+								зберігання;
+							</p>
+						</li>
+						<li class="lounge-furniture__item">
+							<p class="lounge-furniture__text">
+								Кутові дивани Кутові дивани вважаються найзручнішими та комфортнішими. Вони ідеально підійдуть для
+								приємного проведення
+								часу в колі сім'ї або друзів. Кутові дивани в основному використовуються для оформлення великих
+								віталень, так як вони
+								займають багато місця, і для кімнат з невеликою площею просто не підійдуть;
+							</p>
+						</li>
+						<li class="lounge-furniture__item">
+							<p class="lounge-furniture__text">
+								Тахти. Тахта - це одна з варіацій дивана, але стильніша і мінімалістична. Виглядають тахти дуже незвично
+								і можуть
+								підійти для будь-якого інтер'єру. Також тахти більше ніж звичайні дивани підходять для сну, оскільки в
+								їх основі не
+								пружинні блоки, а дерев'яні ламелі або ортопедичні матраци;
+							</p>
+						</li>
+						<li class="lounge-furniture__item">
+							<p class="lounge-furniture__text">
+								Крісла. Крісло – це особливий предмет інтер'єру. Сучасні дизайнери не часто використовують його,
+								вважаючи застарілим,
+								проте саме крісла створюють особливий затишок та комфорт у будь-якій кімнаті. Сьогодні існує величезна
+								різноманітність
+								класичних та сучасних моделей крісел, що дозволяє кожному відшукати ідеальне крісло для свого будинку;
+							</p>
+						</li>
+						<li class="lounge-furniture__item">
+							<p class="lounge-furniture__text">
+								Набір меблів. Комплект м'яких меблів – це відмінне рішення для тих, хто хоче меблювати свою вітальню не
+								лише диваном, а
+								й кріслами. Існують набори з одним або двома кріслами, із прямими або кутовими диванами. Основна
+								перевага будь-якого
+								готового меблевого гарнітура – це те, що предмети меблів у ньому ідеально поєднуються один з одним, і
+								вам не потрібно
+								буде витрачати свій час та сили на їхній підбір.
+							</p>
+						</li>
+					</ul>
+					<p class="lounge-text__conclusion">
+						Підбір м'яких меблів для вітальні – це заняття непросте. Однак при виборі та покупці меблів для своєї вітальні
+						пам'ятайте, що якісні м'які меблі повинні бути не тільки красивими, але й зручними для вас і всіх мешканців
+						вашого
+						будинку.
 					</p>
 				</div>
-			</div>
-			 -->
 
-			<!-- <div class="text">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ex est minus officiis, sed debitis quas perferendis repudiandae animi aperiam fugit recusandae aliquam corrupti doloremque obcaecati nostrum cum, similique quod.
-			</div> -->
+				<!------------ Ecommerce section--------- -->
 
-			<!-- Тимчасовий приклад побудови конструкції -->
-			<div class="section">
-				<div class="items">
-					<div class="item">
-						<div class="content">1</div>
-					</div>
-					<div class="item">
-						<div class="content">2</div>
-					</div>
-					<div class="item">
-						<div class="content">3</div>
-					</div>
-					<div class="item">
-						<div class="content">4</div>
-					</div>
-					<div class="item">
-						<div class="content">5</div>
-					</div>
+				<div class="ecommerce__container">
+					<h2 class="ecommerce-title">Follow products and discounts on Instagram</h2>
+					<ul class="ecommerce-list">
+						<li class="ecommerce-item">
+							<img src="img/img1.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item">
+							<img src="img/img2.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item">
+							<img src="img/img3.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item">
+							<img src="img/img4.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item">
+							<img src="img/img5.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item">
+							<img src="img/img6.jpg" alt="#" width="150" height="150">
+						</li>
+					</ul>
 				</div>
-			</div>
+				
+				<!------------ Ecommerce section training--------- -->
+				
+				<div class="ecommerce-training__container">
+					<h2 class="ecommerce-title__training">Follow products and discounts on Instagram</h2>
+					<ul class="ecommerce-list__training">
+						<li class="ecommerce-item__training">
+							<img src="img/img1.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item__training">
+							<img src="img/img2.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item__training">
+							<img src="img/img3.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item__training">
+							<img src="img/img4.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item__training">
+							<img src="img/img5.jpg" alt="#" width="150" height="150">
+						</li>
+						<li class="ecommerce-item__training">
+							<img src="img/img6.jpg" alt="#" width="150" height="150">
+						</li>
+					</ul>
+				</div>
 
-		</main>
-		<footer class="footer"></footer>
+				<!-- ___________________ -->
+
+				<div class="box__container">
+					<ul class="box-list">
+						<li class="box-item">
+							<div class="box-item__object">
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+							</div>
+							<div class="box-item__object">
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+							</div>
+							<div class="box-item__object">
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+								<a class="link" href="google.com">google</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</main>
+			<footer class="footer"></footer>
 	</body>
 </html>
