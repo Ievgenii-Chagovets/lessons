@@ -1,13 +1,12 @@
 /* Локальне підключення шрифтів */
-/* @import url("fonts.css"); */
+@import url("fonts.css");
 
 /* Скидання стилів */
 @import url("reset.css");
 
 body {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	background-color: #333;
-	color: #fff;
+	font-family: "Proxima Nova", "Quicksand", sans-serif;
+	color: #0d1216;
 }
 
 .page {
@@ -479,4 +478,180 @@ padding(margine)-inline - додає відступи зверху та зниз
 	margin-bottom: 10px;
 	min-height: 14px;
 	font-size: 10px;
+}
+
+
+/* ================================================ */
+/* ------------------верстка домашки--------------- */
+/* ================================================ */
+
+/* ------------------------krovato-------------- */
+
+[class*="__container"] {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.lounge__container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.lounge-title {
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	color: #2b2929;
+	line-height: 1.2em;
+
+	margin-bottom: 40px;
+}
+
+.lounge-picture {
+	margin-bottom: 40px;
+}
+
+.picture {
+	width: 100%;
+}
+
+.lounge-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.875em;
+
+	margin-bottom: 20px;
+}
+
+.lounge-text__introduction {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4em;
+
+	padding: 15px 0;
+	margin-bottom: 20px;
+}
+
+.lounge-furniture__item {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 0 30px;
+}
+
+.lounge-furniture__img {
+	margin-right: 10px;
+}
+
+.lounge-furniture__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.875em;
+}
+
+.lounge-text__conclusion {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.875em;
+
+	padding: 15px 0;
+}
+
+/* -----------eduplay----------- */
+
+.eduplay {
+	background-image: url(../img/explore-courses-background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.background__container {
+	display: flex;
+	
+}
+
+.background {
+	width: 600px;
+	padding: 121px 0;
+	margin-right: 40px;
+}
+
+.background-title {
+	font-family: "Quicksand", sans-serif;
+	color: #fff;
+	font-size: 40px;		
+	font-weight: 700;
+	line-height: 1.2em;
+
+	margin-bottom: 24px;
+}
+
+.background-text {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.6em;
+
+	margin-bottom: 24px;
+}
+
+.background-button {
+	color: #0d1216;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.56em;
+	background-color: #fff;
+	border-radius: 8px 8px 8px 8px;
+
+	padding: 12px 40px;
+}
+
+
+/* ---------------collections------------- */
+
+
+
+.collections {
+	background: 
+	url(../img/flower-1.png) no-repeat left bottom, 
+	url(../img/flower-2.png) no-repeat right,
+	#f5f9f9;
+	padding-top: 135px;
+	padding-bottom: 135px;
+}
+
+.collections__container {
+	display: flex;
+}
+
+.hero-left {
+	max-width: 705px;
+	margin-right: 95px;
+}
+
+.collections-title {
+	margin-bottom: 52px;
+
+	font-family: "Roboto", sans-serif;
+	color: #000;
+	font-size: 74px;
+	font-weight: 400;
+	line-height: 0.74em;
+}
+.collections-text {
+	margin-bottom: 66px;
+
+	text-transform: capitalize;
+	font-size: 30px;
+	line-height: 1.83em;
+}
+.hero-button {
+	padding: 21px 36px;
+	width: 220px;
+	height: 70px;
+	background-color: #000;
+	color: #fff;
+	font-size: 29px;
 }
