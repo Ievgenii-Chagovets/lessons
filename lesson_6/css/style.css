@@ -567,10 +567,6 @@ padding(margine)-inline - додає відступи зверху та зниз
 	background-size: cover;
 }
 
-/* .background__container {
-	display: flex;
-	
-} */
 
 .background {
 	display: inline-block;
