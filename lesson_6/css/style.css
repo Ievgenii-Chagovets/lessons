@@ -653,10 +653,11 @@ padding(margine)-inline - додає відступи зверху та зниз
 	line-height: 1.83em;
 }
 .hero-button {
-	padding: 21px 36px;
-	width: 220px;
+	padding: 20px 14px 12px 45px;
+	width: 200px;
 	height: 70px;
-	background-color: #000;
 	color: #fff;
 	font-size: 29px;
+	background: #000 url(../img/hero-icon.png) left center no-repeat;
+	
 }
