@@ -488,7 +488,7 @@ padding(margine)-inline - додає відступи зверху та зниз
 /* ------------------------krovato-------------- */
 
 [class*="__container"] {
-	width: 1200px;
+	max-width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
@@ -537,7 +537,7 @@ padding(margine)-inline - додає відступи зверху та зниз
 .lounge-furniture__item {
 	display: flex;
 	margin-bottom: 20px;
-	padding: 0 30px;
+	padding-left: 30px;
 }
 
 .lounge-furniture__img {
@@ -567,15 +567,16 @@ padding(margine)-inline - додає відступи зверху та зниз
 	background-size: cover;
 }
 
-.background__container {
+/* .background__container {
 	display: flex;
 	
-}
+} */
 
 .background {
-	width: 600px;
-	padding: 121px 0;
-	margin-right: 40px;
+	display: inline-block;
+	max-width: 600px;
+	padding: 200px 0;
+	margin-right: 50px;
 }
 
 .background-title {
@@ -609,8 +610,12 @@ padding(margine)-inline - додає відступи зверху та зниз
 	background-color: #fff;
 	border-radius: 8px 8px 8px 8px;
 	background: #FFF url(../img/button-label-x2.png) left center no-repeat;
+}
 
-	
+.background-image {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 70px;
 }
 
 
@@ -627,13 +632,11 @@ padding(margine)-inline - додає відступи зверху та зниз
 	padding-bottom: 135px;
 }
 
-.collections__container {
-	display: flex;
-}
 
 .hero-left {
+	display: inline-block;
 	max-width: 705px;
-	margin-right: 95px;
+	padding: 155px 0 60px 0;
 }
 
 .collections-title {
@@ -660,4 +663,9 @@ padding(margine)-inline - додає відступи зверху та зниз
 	font-size: 29px;
 	background: #000 url(../img/hero-icon.png) left center no-repeat;
 	
+}
+.hero-right {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 50px
 }
