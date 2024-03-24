@@ -9,9 +9,6 @@ body {
 	color: #0d1216;
 }
 
-.page {
-	padding: 30px;
-}
 .example {
 	padding: 20px;
 }
@@ -535,9 +532,9 @@ padding(margine)-inline - додає відступи зверху та зниз
 }
 
 .lounge-furniture__item {
-	display: flex;
 	margin-bottom: 20px;
 	padding-left: 30px;
+	background: url(../img/mark.png) no-repeat;
 }
 
 .lounge-furniture__img {
@@ -548,6 +545,7 @@ padding(margine)-inline - додає відступи зверху та зниз
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.875em;
+	padding-left: 20px;
 }
 
 .lounge-text__conclusion {
@@ -562,11 +560,9 @@ padding(margine)-inline - додає відступи зверху та зниз
 
 .eduplay {
 	background-image: url(../img/explore-courses-background.png);
-	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-
 
 .background {
 	display: inline-block;
@@ -595,7 +591,7 @@ padding(margine)-inline - додає відступи зверху та зниз
 }
 
 .background-button {
-	padding: 12px 14px 12px 45px;
+	padding: 13px 20px 12px 40px;;
 	width: 220px;
 	height: 50px;
 
@@ -603,12 +599,12 @@ padding(margine)-inline - додає відступи зверху та зниз
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1.56em;
-	background-color: #fff;
-	border-radius: 8px 8px 8px 8px;
-	background: #FFF url(../img/button-label-x2.png) left center no-repeat;
+	border-radius: 8px;
+	background: #FFF url(../img/button-label-x2.png) no-repeat 8% / 20px;
 }
 
 .background-image {
+	max-width: 515px;
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 70px;
@@ -621,8 +617,8 @@ padding(margine)-inline - додає відступи зверху та зниз
 
 .collections {
 	background: 
-	url(../img/flower-1.png) no-repeat left bottom, 
-	url(../img/flower-2.png) no-repeat right,
+	url(../img/flower-1.png) no-repeat 0 85% / 150px, 
+	url(../img/flower-2.png) no-repeat 100% 45% / 150px,
 	#f5f9f9;
 	padding-top: 135px;
 	padding-bottom: 135px;
@@ -631,8 +627,9 @@ padding(margine)-inline - додає відступи зверху та зниз
 
 .hero-left {
 	display: inline-block;
-	max-width: 705px;
-	padding: 155px 0 60px 0;
+	max-width: 730px;
+	padding: 35px 0 60px 0;
+	margin-right: 90px;
 }
 
 .collections-title {
@@ -652,16 +649,27 @@ padding(margine)-inline - додає відступи зверху та зниз
 	line-height: 1.83em;
 }
 .hero-button {
-	padding: 20px 14px 12px 45px;
-	width: 200px;
-	height: 70px;
+	padding: 25px 28px 22px 64px;
 	color: #fff;
 	font-size: 29px;
-	background: #000 url(../img/hero-icon.png) left center no-repeat;
+	background: #000 url(../img/hero-icon.png) no-repeat 10% / 30px;
 	
 }
+
 .hero-right {
 	display: inline-block;
+	/* padding-left: 40px; */
 	vertical-align: top;
-	padding-top: 50px
+}
+
+.hero-img {
+	max-width: 340px;
+	box-shadow: inset -2px -1px 7px 5px hsl(0deg 0% 0% / 25%);
+	border-radius: 160px 0;
+}
+
+.hero-img img {
+	width: 100%;
+	margin: -20px 18px 20px -18px;
+	border-radius: 160px 0;
 }
