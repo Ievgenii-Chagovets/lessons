@@ -7,361 +7,378 @@
 
 body {
 	font-family: "Quicksand", sans-serif;
-	background-color: #333;
-	color: #fff;
-}
-.page {
-	padding: 30px;
-}
-.example {
-	padding: 20px;
+	color: #0d1216;
 }
 
-/* ============================================= */
-/* =============== Псевдокласи ================= */
-/* ============================================= */
+/* ================================================ */
+/* ------------------верстка домашки--------------- */
+/* ================================================ */
 
-/* Анатомія псевдокласів */
-/*
-селектор:псевдоклас{
-}
-*/
-/*
-Вкладеність
-селектор#1:псевдоклас селектор#2{
-}
-*/
 
-/* Псевдокласи стану */
-/*
-	:hover
-	Звернення до елемента у стані "при наведенні миші"
-	Застосовується до будь-якого елемента
-*/
-.link {
-	background-color: #8b3dff;
-	padding: 12px;
-	font-weight: 700;
-	line-height: 1.56;
-	border-radius: 8px;
-	margin-bottom: 20px;
+/* --------test---------------- */
+
+.test-list__item-link:active {
+	color: red;
 }
-.link span {
-	display: inline-block;
-	background: url("../img/favourite.svg") 0 0 no-repeat;
-	padding-left: 34px;
-}
-/* + */
-.link:hover {
-	background-color: #a875ff;
+.test-list__item-link:focus {
+	color: blue;
 }
 
-.link:hover span {
-	background-position: 5px 0;
-}
-
-/* Застосовується до будь-якого елемента */
-.text {
-	background-color: #7a956b;
-	padding: 15px;
-	/* visibility: hidden; */
-}
-.text:hover {
-	/* background-color: #77608d; */
-}
-.page:hover .text {
-	/* visibility: visible; */
-}
-
-/*
-	:active Звернення до елемента у стані 
-	"при натиснутій клавіші миші"
-*/
-.link:active {
-	/* background-color: #7921ed; */
-}
-
-/*
-:visited Звернення до елемента 
-у стані "відвіданого посилання"
-обмежена кількість властивостей
-*/
 .link:visited {
-	/* background-color: #8776a1; */
+	color: green;
 }
-
-/*
-	:focus, :focus-visible Звернення до 
-	елементу у стані "фокусу"
-*/
-.link:focus {
-	/* outline: 2px dashed red; */
-}
-/* Тільки коли на об'єкт перейшли (TAB) */
-.link:focus-visible {
-	/* outline: 2px dashed red; */
-}
-
-/*
-:target
-Звернення до елемента у стані
-"ефекту від посилання з іншого об'єкту"
-*/
-
-/*
-.show {
-	color: yellow;
-}
-.show:hover {
-	text-decoration: underline;
-}
-*/
-/*
-.text {
+.target {
+	background-color: #913b3b;
+	padding: 15px;
 	display: none;
 }
-.text:target {
+.target:target {
 	display: block;
 }
-*/
-/* Псевдокласи положення у коді */
 
-/*
-	:first-child
-	Звернення до першого дочірнього елементу в коді
-*/
-/*
-.text p:first-child {
-	background-color: #77608d;
-}
-.text *:first-child {
-	background-color: #77608d;
-}
-*/
-
-/* 
-	:first-of-type
-	Звернення до першого вказаного 
-	об'єкту в коді
-*/
-/*
-.text p:first-of-type {
-	background-color: #7a956b;
-}
-*/
-
-/*
-	:last-child
-	Звернення до останього 
-	елементу в коді
-*/
-/*
-.text p:last-child {
+.test-list li:first-child {
 	text-transform: uppercase;
 }
-*/
-/*
-	:last-of-type
-	Звернення до останього 
-	вказаного об'єкту в коді
-*/
-/*
-.text p:last-of-type {
+.test-list li:last-child {
 	text-transform: uppercase;
 }
-*/
 
-/*
-:nth-child(значення/алгоритм)
-Звернення до конкретного елементу в коді
-
-odd - через один не парні
-even - через один парні
-*/
-/*
-.text p:nth-child(8) {
-	background-color: #7a956b;
-}
-*/
-/*
-.text p:nth-child(even) {
-	background-color: #7a956b;
-}
-*/
-/* Вкладенність */
-/*
-.text:nth-child(even) p {
-	background-color: #7a956b;
-}
-*/
-/*
-.text p:nth-child(1),
-.text p:nth-child(4),
-.text p:nth-child(8) {
-	background-color: #7a956b;
-}
-*/
-/* Алгоритм "кожен-через" */
-/* коженn + починаючи з */
-/*
-Кожен третій
-.text p:nth-child(3n) {
-	background-color: #7a956b;
-}
-Кожен третій починаючи з першого
-.text p:nth-child(3n + 1) {
-	background-color: #7a956b;
-}
-*/
-/*
-Кожен третій починаючи з другого
-.text p:nth-child(3n + 2) {
-	background-color: #794f45;
-}
-*/
-/*
-Кожен четвертий починаючи з другого
-.text p:nth-child(4n + 2) {
-	background-color: #77608d;
-}
-*/
-
-/*
-	:not(селектор або псевдоклас) 
-	Псевдоклас виключення
-*/
-
-/*
-.text p {
-	margin-bottom: 15px;
-}
-.text p:last-child {
-	margin-bottom: 0px;
-}
-*/
-
-/* АБО */
-.text p:not(:last-child) {
-	margin-bottom: 15px;
+.test-list li:last-of-type {
+	text-transform: lowercase;
 }
 
-/* 
-	:has(селектор або псевдоклас) 
-	Псевдоклас присутності в коді
-*/
-/*
-.text:has(p) {
-	background-color: #794f45;
+.test-list li:nth-child(2) {
+	text-transform: uppercase;
 }
 
-.text:has(span) {
-	background-color: #fff;
-}*/
-
-/* Гарна практика */
-
-/* Вказуємо відсуп за замовченням */
-.article > * {
-	margin-bottom: 15px;
-}
-.title {
-	font-weight: 700;
-	font-size: 24px;
-	/* Задаємо свій відступ за потреби */
-	margin-bottom: 25px;
-}
-.content {
-	line-height: 1.2;
-}
-.button {
-	background-color: yellow;
-	padding: 12px;
-	border-radius: 5px;
-	color: #000;
-}
-.button:hover {
-	background-color: rgb(35, 238, 16);
-}
-.article > *:last-child {
-	margin-bottom: 0px;
+.test-list__item:not(:last-child) {
+	margin-bottom: 20px;
 }
 
-/* 
-	Псевдокласи мають більший пріоритет
-	(уточнення)
-*/
+.test-list__item:nth-child(3) {
+	color: rgba(255, 0, 0, 1);
+}
 
-/* ============================================= */
-/* =============== Псевдоелементи ============== */
-/* ============================================= */
+.test-list:has(a) {
+	background-color: #595555;
+}
 
-/* Анатомія псевдоелементів */
-/*
-селектор::псевдоелемент{
-}
-Псевдоелементи не можна додати до 
-одинарних тегів(наприклад img,br), 
-тому що ці теги не можуть містити в собі контенту.
-*/
 
-/*
-::before{}
-::after{}
+/* ------------Game------------------ */
 
-!!!!! Псевдоелементи - рядкові  (але в reset доданий display: inline-block;) !!!!!
-Властивість content: ""; - Обов'язкова!
-*/
-/*
-.block::before {
-	content: "(";
+
+.game-frame {
+	border: #188328 dotted;
+	max-width: 1000px;
+	height: 100%;
+	padding: 50px 50px;
+
 }
-.block::after {
-	content: ")";
+
+.road {
+	opacity: 0;
 }
-*/
-/*
-.list {
-	font-size: 10px;
-}
-.list__item:not(:last-child) {
-	margin-bottom: 5px;
-}
-.list__item::before {
-	content: "";
-	vertical-align: middle;
-	background: url("../img/icon.png") 0 0 / 100% no-repeat;
+
+.game-road__1 {
+	background: 
+	linear-gradient(90deg, rgba(255, 0, 0, 1) 0%,
+	rgba(66, 255, 0, 1) 50%,
+	rgba(36, 0, 255, 1) 100%);
 	width: 20px;
+	height: 50px;
+	margin-left: 15px;
+	opacity: 1;
+}
+
+.game-road__2 {
+	background:
+	linear-gradient(90deg, rgba(255, 0, 0, 1) 0%,
+	rgba(66, 255, 0, 1) 50%,
+	rgba(36, 0, 255, 1) 100%);
+	width: 70px;
 	height: 20px;
+	margin: -20px 0 0 20px;
+	opacity: 0;
+}
+
+.game-road__2:hover {
+	opacity: 1;
+}
+
+.game-road__3 {
+	background:
+	linear-gradient(90deg, rgba(255, 0, 0, 1) 0%,
+	rgba(66, 255, 0, 1) 50%,
+	rgba(36, 0, 255, 1) 100%);
+	width: 20px;
+	height: 70px;
+	margin: -20px 0 0 70px;
+	opacity: 0;
+}
+
+.game-road__3:hover {
+	opacity: 1;
+}
+
+.game-road__4 {
+	background:
+	linear-gradient(90deg, rgba(255, 0, 0, 1) 0%,
+	rgba(66, 255, 0, 1) 50%,
+	rgba(36, 0, 255, 1) 100%);
+	width: 300px;
+	height: 20px;
+	margin: -20px 0 0 70px;
+	opacity: 0;
+}
+
+.game-road__4:hover {
+	opacity: 1;
+}
+
+.game-road__5 {
+	background:
+	linear-gradient(90deg, rgba(255, 0, 0, 1) 0%,
+	rgba(66, 255, 0, 1) 50%,
+	rgba(36, 0, 255, 1) 100%);
+	width: 20px;
+	height: 300px;
+	margin: -20px 0 0 350px;
+	opacity: 0;
+}
+.game-road__5:hover {
+	opacity: 1;
+}
+
+.game-road__6 {
+	background:
+	linear-gradient(90deg, rgba(255, 0, 0, 1) 0%,
+	rgba(66, 255, 0, 1) 50%,
+	rgba(36, 0, 255, 1) 100%);
+	width: 250px;
+	height: 10px;
+	margin: -10px 0 0 350px;
+	opacity: 0;
+} 
+.game-road__6:hover {
+	opacity: 1;
+}
+
+.game-road__7 {
+	background-color: red;
+	text-align: center;
+	text-transform: uppercase;
+	width: 90px;
+	height: 50px;
+	margin: -30px 0 0 600px;
+	opacity: 0;
+}
+
+.game-road__7:hover {
+	opacity: 1;
+}
+/* ------------------------krovato-------------- */
+
+[class*="__container"] {
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.lounge__container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.lounge-title {
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	color: #2b2929;
+	line-height: 1.2em;
+
+	margin-bottom: 40px;
+}
+
+.lounge-picture {
+	margin-bottom: 40px;
+}
+
+.picture {
+	width: 100%;
+}
+
+.lounge-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.875em;
+	margin-bottom: 20px;
+}
+
+.lounge-text__introduction {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4em;
+
+	padding: 15px 0;
+	margin-bottom: 20px;
+}
+
+.lounge-furniture__item {
+	padding-left: 30px;
+	background: url(../img/mark.png) no-repeat;
+}
+
+.lounge-furniture__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.lounge-furniture__img {
 	margin-right: 10px;
 }
 
-.list__item:hover::before {
-	opacity: 0.5;
+.lounge-furniture__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.875em;
+	padding-left: 20px;
 }
-*/
-/* Взаємодія псевдокласа та псевдоелемента */
-/* Звернення до ::before коли .list__item у стані :hover */
-/* ніяких пробілів */
-/*
-.list__item:hover::before {
-}
-*/
 
-.sub-title {
-	display: inline-block;
-	font-family: "Exo", sans-serif;
-	font-weight: 700;
-	font-size: 60px;
-	line-height: 1.16; /* 70/60 */
-	text-transform: uppercase;
+.lounge-text__conclusion {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.875em;
+
+	padding: 15px 0;
 }
-.sub-title::after {
-	margin-top: 20px;
-	max-width: 80%;
-	height: 1px;
+
+/* ----------------About me---------------------- */
+
+.about-me {
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background-image: 
+	linear-gradient(-180deg, #000000e6 0, #000000fc 100%),
+	url(../img/about-me-background.png);
+	background-position: center;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.about-me__title {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.16em;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 400px;
+	margin-bottom: 40px;
+}
+
+.about-me__title::after {
 	display: block;
 	content: "";
-	background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+	height: 1px;
+	margin-top: 15px;
+	width: 100%;
+	background: 
+	linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, 
+	rgba(66, 255, 0, 1) 50%, 
+	rgba(36, 0, 255, 1) 100%);
 }
 
-/* background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 51%, rgba(36,0,255,1) 100%); */
+.about-me__text {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 2.22em;
+	text-transform: capitalize;
+	text-align: center;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-bottom: 75px;
+}
+
+.about-me__list {
+	text-align: center;
+	/* margin: 0 60px; */
+}
+
+.about-me__item {
+	display: inline-block;
+	margin-right: 55px;
+}
+
+.about-me__item::after {
+	content: '';
+	display: inline-block;
+	background: 
+	linear-gradient(90deg, rgba(255, 0, 0, 1) 0%,
+	rgba(66, 255, 0, 1) 50%,
+	rgba(36, 0, 255, 1) 100%);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 55px;
+	
+}
+
+.about-me__item::after:not(:last-child) {
+	margin: 0 39px;
+}
+
+.about-me__link {
+	font-family: "Orbitron", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.25em;
+	text-transform: capitalize;
+}
+
+/* -----------footer------------- */
+
+.footer {
+	background-color: #000;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+}
+
+.footer-item {
+	display: inline-block;
+	padding: 20px 0;
+}
+
+.footer-item:not(:last-child) {
+	margin-right: 60px;
+}
+
+.footer-item__phone::before {
+	content: '';
+	background: url(../img/footer-call.png) no-repeat 0 0;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.footer-item__location::before {
+	content: '';
+	background: url(../img/footer-location.png) no-repeat 0 0;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.footer-item__email::before {
+	content: '';
+	background: url(../img/footer-email.png) no-repeat 0 0;
+	width: 20px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
