@@ -59,7 +59,7 @@ body {
 	color: rgba(255, 0, 0, 1);
 }
 
-.test-list:has(a) {
+.test-list__item:has(a) {
 	background-color: #595555;
 }
 
